@@ -1,6 +1,6 @@
-# Title
+# **Elite Qualifier - Chatbot**
 
-Simple (or clever and funny?) description
+A **_very_** simple chatbot that isn't very good with interaction
 
 ## Table of Contents
 
@@ -12,7 +12,7 @@ Simple (or clever and funny?) description
 
 ## Background
 
-This is why this application exists.
+This *application* exists as a project for __C2C *Elite 101*__ to see where I am as a programmer
 
 ## Install
 
@@ -20,6 +20,5 @@ These are the steps to setup your local environment to run this application.
 
 ## Usage
 
-These are the steps to use the application or interact with it.
+If where you access this is somewhere you can *run* code, just run it and this **basic** chatbot (if you can even call it that) will begin attempting conversation. Fair warning, it's *really* bad at conversing.
 
-### Any optional sections
