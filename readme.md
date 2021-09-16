@@ -10,6 +10,8 @@ A **_very_** simple chatbot that isn't very good with interaction
 
 - [Usage](#usage)
 
+- Added a fourth bullet point
+
 ## Background
 
 This *application* exists as a project for __C2C *Elite 101*__ to see where I am as a programmer
