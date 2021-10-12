@@ -1,5 +1,16 @@
 import random
+from colored import fg
 
+user = input("Fav color?(violet, red, yellow, white, green, blue, cyan, magenta) ")
+color = fg(user)
+print (color + 'Surprise!!')
+choice = input(color + 'do you like it?(yes/no) ')
+if choice.lower() == "yes":
+  print("Great! \\(^v^)/")
+else:
+  color = fg('white')
+  print(color + "Sorry... (>n<)")
+  
 topics = [
 "anime",
 "sports",
