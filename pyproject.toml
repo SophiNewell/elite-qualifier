@@ -7,8 +7,6 @@ authors = ["SophiNewell <<>>"]
 [tool.poetry.dependencies]
 python = "^3.8"
 colored = "^1.4.2"
-tensorflow = "^2.6.0"
-tflearn = "^0.5.0"
 
 [tool.poetry.dev-dependencies]
 

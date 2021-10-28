@@ -80,6 +80,7 @@ net = tflearn.regression(net)
 model = tflearn.DNN(net)
 
 
+
 def bag_of_words(s, words):
     bag = [0 for _ in range(len(words))]
 
@@ -111,14 +112,27 @@ def chat():
 
         print(random.choice(responses))
 
-user = input("Fav color?(violet, red, yellow, white, green, blue, cyan, magenta) ")
-color = fg(user)
-print (color + 'Surprise!!')
-choice = input(color + 'do you like it?(yes/no) ')
-if choice.lower() == "yes":
-  print("Great! \\(^v^)/")
-else:
-  color = fg('white')
-  print(color + "Sorry... (>n<)")
+while True:
+  user = input("Fav color?(violet, red, yellow, white, green, blue, cyan, magenta) ")
+  try:
+    color = fg(user)
+    print (color + 'Surprise!!')
+    choice = input(color + 'do you like it?(yes/no) ')
+    if choice.lower() == "yes":
+      print("Great! \\(^v^)/")
+      break
+    else:
+      color = fg('white')
+      print(color + "Sorry... (>n<)")
+      choice = input("Would you like to choose a different color? (Y/N)")
+      if choice.upper() == "N":
+        break
+      else:
+        continue
+  except KeyError:
+    print("Sorry >-<! That didn't work!")
+
+print("Welcome to the anime chatbot!")
+
 
 chat()
